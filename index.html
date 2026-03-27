@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Completo de HTML5</title>
+</head>
+<body>
+
+<h1>Exemplo Completo de HTML5</h1>
+<hr>
+
+<!-- Formatação de Texto -->
+<h2>Formatação de Texto</h2>
+<p><strong>&lt;strong&gt;</strong> → Importância</p>
+<p><em>&lt;em&gt;</em> → Ênfase</p>
+<p><mark>&lt;mark&gt;</mark> → Destaque</p>
+<p><small>&lt;small&gt;</small> → Observação</p>
+<p><del>&lt;del&gt;</del> → Removido</p>
+<p><ins>&lt;ins&gt;</ins> → Inserido</p>
+<p><sub>&lt;sub&gt;</sub> → Subscrito</p>
+<p><sup>&lt;sup&gt;</sup> → Sobrescrito</p>
+<hr>
+
+<!-- Citações e Contato -->
+<h2>Citações e Contato</h2>
+<p>&lt;blockquote&gt; → <blockquote>Esta é uma citação longa, usada para destacar trechos de texto ou falas de alguém de forma independente.</blockquote></p>
+<p>&lt;q&gt; → <q>Esta é uma citação curta dentro de um parágrafo.</q></p>
+<p>&lt;cite&gt; → <cite>Dom Quixote</cite></p>
+<p>&lt;abbr&gt; → <abbr title="HyperText Markup Language">HTML</abbr></p>
+<p>&lt;address&gt; → <address>contato@email.com<br>Rua Exemplo, 123 - Cidade</address></p>
+<hr>
+
+<!-- Listas e Definições -->
+<h2>Listas e Definições</h2>
+<h3>&lt;ul&gt; → Lista Não Ordenada</h3>
+<ul>
+    <li>&lt;li&gt; → Item 1</li>
+    <li>&lt;li&gt; → Item 2</li>
+    <li>&lt;li&gt; → Item 3</li>
+</ul>
+
+<h3>&lt;ol&gt; → Lista Ordenada</h3>
+<ol>
+    <li>&lt;li&gt; → Primeiro</li>
+    <li>&lt;li&gt; → Segundo</li>
+    <li>&lt;li&gt; → Terceiro</li>
+</ol>
+
+<h3>&lt;dl&gt; → Lista de Definição</h3>
+<dl>
+    <dt>&lt;dt&gt; → HTML</dt>
+    <dd>&lt;dd&gt; → Linguagem de marcação usada na web</dd>
+    <dt>&lt;dt&gt; → CSS</dt>
+    <dd>&lt;dd&gt; → Linguagem de estilo para páginas web</dd>
+</dl>
+<hr>
+
+<!-- Imagens e Mídia -->
+<h2>Imagens e Mídia</h2>
+<h3>&lt;img&gt; → imagem</h3>
+<img src="img/uau.jpg" alt="Exemplo de imagem">
+
+<h3>&lt;figure&gt; → agrupa mídia e &lt;figcaption&gt; → legenda</h3>
+<figure>
+    <img src="img/pinguimm.png" alt="Exemplo de figura">
+    <figcaption>Legenda da figura</figcaption>
+</figure>
+
+<h3>&lt;picture&gt; → imagem responsiva</h3>
+<picture>
+    <source media="(max-width:600px)" src="img/ceu.jpg">
+    <img src="img/ceu.jpg" alt="Imagem responsiva">
+</picture>
+<hr>
+
+<!-- Áudio e Vídeo -->
+<h2>Áudio e Vídeo</h2>
+<h3>&lt;audio&gt; → áudio</h3>
+<audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+</audio>
+
+<h3>&lt;video&gt; → vídeo, &lt;source&gt; → fonte de mídia, &lt;track&gt; → legenda</h3>
+<video controls width="400">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <track src="https://www.w3schools.com/html/mov_bbb_subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    Seu navegador não suporta vídeo.
+</video>
+<hr>
+
+<!-- Tabela -->
+<h2>Tabela</h2>
+<table border="1">
+    <caption>&lt;caption&gt; → Título da Tabela</caption>
+    <thead>
+        <tr>
+            <th>&lt;th&gt; → Cabeçalho 1</th>
+            <th>&lt;th&gt; → Cabeçalho 2</th>
+            <th>&lt;th&gt; → Cabeçalho 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&lt;td&gt; → Dado 1</td>
+            <td>&lt;td&gt; → Dado 2</td>
+            <td>&lt;td&gt; → Dado 3</td>
+        </tr>
+        <tr>
+            <td>&lt;td&gt; → Dado 4</td>
+            <td>&lt;td&gt; → Dado 5</td>
+            <td>&lt;td&gt; → Dado 6</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<!-- Formulário -->
+<h2>Formulário</h2>
+<form>
+    <label for="nome">Nome &lt;label&gt;:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+
+    <p>&lt;textarea&gt; → Texto longo:</p>
+    <textarea rows="4" cols="50" placeholder="Digite sua mensagem"></textarea>
+
+    <p>&lt;select&gt; → Lista com &lt;option&gt; e &lt;optgroup&gt;</p>
+    <select>
+        <optgroup label="Cítricas">
+            <option>Laranja</option>
+            <option>Limão</option>
+        </optgroup>
+        <optgroup label="Tropicais">
+            <option>Manga</option>
+            <option>Abacaxi</option>
+        </optgroup>
+    </select>
+
+    <p>&lt;datalist&gt; → Sugestões</p>
+    <input list="cidades" placeholder="Escolha uma cidade">
+    <datalist id="cidades">
+        <option>São Paulo</option>
+        <option>Rio de Janeiro</option>
+        <option>Salvador</option>
+    </datalist>
+
+    <button type="submit">&lt;button&gt; Enviar</button>
+    <output>Resultado do formulário</output>
+</form>
+<hr>
+
+<!-- Texto Semântico e Programação -->
+<h2>Texto Semântico e Programação</h2>
+<p>&lt;time&gt; → <time datetime="2026-03-27T10:00">27 de março de 2026, 10:00</time></p>
+<p>&lt;data&gt; → <data value="12345">Valor semântico: 12345</data></p>
+<p>&lt;code&gt; → <code>print("Olá, mundo!")</code></p>
+<pre>
+&lt;pre&gt; → Texto formatado
+Linha 1
+Linha 2
+Linha 3
+    Indentação preservada
+</pre>
+<p>&lt;kbd&gt; → <kbd>Ctrl + C</kbd></p>
+<p>&lt;samp&gt; → <samp>Saída do programa: 42</samp></p>
+<p>&lt;var&gt; → <var>x</var> = 10</p>
+<hr>
+
+<!-- Conteúdo Interativo -->
+<h2>Conteúdo Interativo</h2>
+<details>
+    <summary>&lt;summary&gt; Título do conteúdo expansível</summary>
+    <p>&lt;details&gt; Conteúdo escondido</p>
+</details>
+
+<dialog id="janela">
+    <p>&lt;dialog&gt; Janela de diálogo</p>
+    <button onclick="document.getElementById('janela').close()">Fechar</button>
+</dialog>
+<button onclick="document.getElementById('janela').showModal()">Abrir Dialog</button>
+<hr>
+
+<!-- Conteúdo Externo -->
+<h2>Conteúdo Externo</h2>
+<h3>&lt;iframe&gt; → outra página</h3>
+<iframe src="https://www.example.com" width="400" height="200" title="Exemplo de Iframe"></iframe>
+
+<h3>&lt;embed&gt; → conteúdo externo</h3>
+<embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" width="400" height="200" type="application/pdf">
+
+<h3>&lt;object&gt; → objeto externo e &lt;param&gt; → parâmetros</h3>
+<object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" width="400" height="200" type="application/pdf">
+    <param name="src" value="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">
+    Seu navegador não suporta objetos.
+</object>
+
+</body>
+</html>
